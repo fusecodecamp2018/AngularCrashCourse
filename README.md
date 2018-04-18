@@ -24,7 +24,7 @@ https://angular.io/guide/architecture-components#data-binding
 - Conditionals (to show or hide an HTML element and its children): https://angular.io/api/common/NgIf
 ### Exercise:
 - In your the AppComponent Typescript class, create an array for a handful of Avengers from the Infinity war movie.  Each Avenger needs to have their name and their real name in the world of Marvel.
-Example:
+##### Example:
 ```
 avengers: any[] = [
   {"name": "Hulk", "realName": "Bruce Banner"},
