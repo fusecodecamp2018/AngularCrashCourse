@@ -1,12 +1,8 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <img class="avengers-banner" alt="Avengers-Infinity-War-updated-logo" src="assets/Avengers-Infinity-War-updated-logo.jpg">
 </div>
 <ul class="avengers-list">
   <li *ngFor="let avenger of avengers">
-    <span>
-      <strong>{{avenger.name}}</strong>
-    </span> -
-    <span>{{avenger.realName}}</span>
+    <app-avenger [avenger]="avenger"></app-avenger>
   </li>
 </ul>

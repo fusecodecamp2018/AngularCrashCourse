@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Avenger } from './models/avenger';
 
 @Component({
   selector: 'app-root',
@@ -6,8 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  avengers: any[] = [
-    { 'name': 'Hulk', 'realName': 'Bruce Banner' },
-    { 'name': 'Thor', 'realName': 'Thor Odinson' }
+  avengers: Avenger[] = [
+    new Avenger('Hulk', 'Bruce Banner'),
+    new Avenger('Thor', 'Thor Odinson')
   ];
 }

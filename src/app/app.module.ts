@@ -1,15 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
-import { SampleComponentComponent } from './sample-component/sample-component.component';
-
+import { AvengerComponent } from './avenger/avenger.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SampleComponentComponent
+    AvengerComponent,
   ],
   imports: [
     BrowserModule
