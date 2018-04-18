@@ -48,7 +48,7 @@ avengers: any[] = [
 
 ## Routing
 
-### EXERCISE:
+### Exercise:
 When clicking on any of the avengers in the listing (clicking on a given avengers component), show an image of the given avenger on an area of the page.  The URL at the top of the browser should state: 
 http://localhost:4200/avenger/<The Avenger's name here>
 Test: when you reload the screen, the avenger selected should still have their image displayed.
