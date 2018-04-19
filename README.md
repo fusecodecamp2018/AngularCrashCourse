@@ -1,4 +1,4 @@
-# Code camp Angular crash course walkthrough
+# Code camp - Angular crash course walkthrough
 
 ## Overview on this session and what is covered.
 - This is basically Angular 101.  Marvel themed, for the new Avengers Infinity war movie.
