@@ -7,11 +7,12 @@
 ## Orientation
 1. What is Angular?
 2. Project Creation - Run through of how to install software needed and creating a new project.
-3. CLI introduction - Using Angular's command line interface (CLI)
+3. CLI introduction - Using Angular's command line interface (CLI).
 4. Architecture - Explain the directory structure and files within a new Angular project.
 ### Exercise:
-- Find an image from the Infinity War movie online
-- Save the image to the assets folder
+- Use the Angular CLI to create a new application for yourself.
+- Find an image from the Infinity War movie online.
+- Save the image to the assets folder.
 - Replace the angular logo in the AppComponent's HTML template with this image.
 - (+1) Adjust the size of the new image and change the background color if you desire.
 
