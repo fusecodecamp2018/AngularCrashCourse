@@ -5,9 +5,10 @@
 - We are going to use the default project Angular's CLI creates, explore basic mechanics of the framework, and expand out the application to showcase each area we cover.
 
 ## Orientation
-1. Project Creation - Run through of how to install software needed and creating a new project.
-2. CLI introduction - Using Angular's command line interface (CLI)
-3. Architecture - Explain the directory structure and files within a new Angular project.
+1. What is Angular?
+2. Project Creation - Run through of how to install software needed and creating a new project.
+3. CLI introduction - Using Angular's command line interface (CLI)
+4. Architecture - Explain the directory structure and files within a new Angular project.
 ### Exercise:
 - Find an image from the Infinity War movie online
 - Save the image to the assets folder
