@@ -8,8 +8,8 @@ import { Avenger } from './models/avenger';
 })
 export class AppComponent {
   avengers: Avenger[] = [
-    new Avenger('Hulk', 'Bruce Banner', 'green', 'assets/hulk.jpg', 'http://marvel-movies.wikia.com/wiki/Hulk'),
-    new Avenger('Thor', 'Thor Odinson', 'grey', 'assets/thor.jpg', 'http://marvel-movies.wikia.com/wiki/Thor_Odinson'),
-    new Avenger('Iron Man', 'Anthony Stark', 'red', 'assets/iron-man.jpg', 'http://marvel-movies.wikia.com/wiki/Anthony_Stark')
+    new Avenger('Hulk', 'Bruce Banner', 'green', 'assets/hulk.png', 'http://marvel-movies.wikia.com/wiki/Hulk'),
+    new Avenger('Thor', 'Thor Odinson', 'grey', 'assets/thor.png', 'http://marvel-movies.wikia.com/wiki/Thor_Odinson'),
+    new Avenger('Iron Man', 'Anthony Stark', 'red', 'assets/iron-man.png', 'http://marvel-movies.wikia.com/wiki/Anthony_Stark')
   ];
 }
