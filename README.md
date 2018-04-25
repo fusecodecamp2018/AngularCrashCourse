@@ -25,17 +25,17 @@ https://angular.io/guide/architecture-components#data-binding
 - Repeaters/Iterators: https://angular.io/api/common/NgForOf 
 - Conditionals (to show or hide an HTML element and its children): https://angular.io/api/common/NgIf
 ### Exercise:
-- In your the AppComponent Typescript class, create an array for a handful of Avengers from the Infinity war movie.  Each Avenger needs to have their name and their real name in the world of Marvel.
+- In your the AppComponent Typescript class, create an array for a handful of Avengers from the Infinity war movie.  Each Avenger needs to have their name, their real name in the world of Marvel, and a font (CSS) color to associate with them.
 ##### Example:
 ```
 avengers: any[] = [
-  {"name": "Hulk", "realName": "Bruce Banner"},
-  {"name": "Thor", "realName": "Thor Odinson"}
+  {"name": "Hulk", "realName": "Bruce Banner", primaryColor: "green"},
+  {"name": "Thor", "realName": "Thor Odinson", primaryColor: "grey"}
 ];
 
 ```
 - In AppComponent's HTML template, replace the unordered list (`<ul>...</ul>`) with an unordered listing of Avengers.  Use a Repeater with the array of Avengers from the previous step to achieve this.
-- (+1) Create a class named Avenger with the properties of "name" and "realName".  Update the array created earlier to be an array of the Avenger class rather than an array of raw JavaScript objects.
+- (+1) Create a class named Avenger with the properties of "name", "realName", and "primaryColor".  Update the array created earlier to be an array of the Avenger class rather than an array of raw JavaScript objects.
 
 ## Components (Part 2)
 1. Component hierarchy - index.html/main.ts->app.module.ts->app.component->...

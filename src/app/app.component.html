@@ -1,8 +1,15 @@
 <div style="text-align:center">
   <img class="avengers-banner" alt="Avengers-Infinity-War-updated-logo" src="assets/Avengers-Infinity-War-updated-logo.jpg">
 </div>
-<ul class="avengers-list">
-  <li *ngFor="let avenger of avengers">
-    <app-avenger [avenger]="avenger"></app-avenger>
-  </li>
-</ul>
+<div class="avenger-listing-container">
+  <div class="avenger-listing-selection">
+    <ul>
+      <li *ngFor="let avenger of avengers">
+        <app-avenger [avenger]="avenger"></app-avenger>
+      </li>
+    </ul>
+  </div>
+  <div class="selected-avenger-content">
+    <iframe src="https://www.youtube.com/watch?v=byQpcN78UjQ" width="854" height="480" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
