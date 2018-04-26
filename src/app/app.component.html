@@ -4,12 +4,14 @@
 <div class="avenger-listing-container">
   <div class="avenger-listing-selection">
     <ul>
-      <li *ngFor="let avenger of avengers">
+      <li *ngFor="let avenger of avengers" (click)="setSelectedAvenger(avenger)" [ngClass]="{ 'is-selected': isSelectedAvenger(avenger) }">
         <app-avenger [avenger]="avenger"></app-avenger>
       </li>
     </ul>
   </div>
   <div class="selected-avenger-content">
-    <iframe src="https://www.youtube.com/watch?v=byQpcN78UjQ" width="854" height="480" frameborder="0" allowfullscreen></iframe>
+    <div *ngIf="selectedAvenger">{{selectedAvenger.videoUrl}}</div>
+    <!-- <iframe *ngIf="selectedAvenger" [src]="selectedAvenger.videoUrl" width="854" height="480" allowfullscreen>
+    </iframe> -->
   </div>
 </div>
