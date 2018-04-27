@@ -6,6 +6,11 @@
 
 ## 1 - Orientation
 - What is Angular?
+  - https://angular.io/
+- Other Frameworks,
+  - React, https://reactjs.org/
+  - Ember, https://www.emberjs.com/  
+  - Vue, https://vuejs.org/
 - Project Creation - Run through of how to install software needed and creating a new project.
 - CLI introduction - Using Angular's command line interface (CLI).
 - Architecture - Explain the directory structure and files within a new Angular project.
@@ -58,17 +63,28 @@ https://toddmotto.com/ng-class-angular-classes
 - In the avengers array, add a description to each avenger created there.
 - Add a section to the right-hand side of the Avenger listing that shows the description for the selected avenger.
 
-
-
-
-
-
-## 4 - Component (outputs/emitters)
+## 5 - Component (outputs/emitters)
 - Event parameters - Cover how as a practice any data changes you need to emit from a component should be through event parameters.
 https://angular.io/guide/component-interaction#parent-listens-for-child-event
-
-- Common Angular additions to add into your HTML templates.
-- Conditionals (to show or hide an HTML element and its children): https://angular.io/api/common/NgIf
+### Exercise:
+- Add to your list of avengers some of the villians from the story.
+- Add a radio button toggle in the right-hand pane where the selected Avenger is presented.  The radio button can be toggled on by the user to indicate that the selected Avenger is a villan (ex. Loki).
+- Style the listing of avengers so that villians are presented differently.  Maybe change the font color to red or some other particular you think makes sense.
 
 ## Services
+- Cover the basics of services for Angular via the link below.
+https://angular.io/tutorial/toh-pt4
+- Call out how the service has to be 
+
+### Exercise:
+- Use the CLI to create a service named "avenger".
+- Inject the
+
+
 ## Routing
+
+
+
+
+
+- Conditionals (to show or hide an HTML element and its children): https://angular.io/api/common/NgIf
