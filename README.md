@@ -4,7 +4,7 @@
 - This is basically Angular 101.  Marvel themed, for the new Avengers Infinity war movie.
 - We are going to use the default project Angular's CLI creates, explore basic mechanics of the framework, and expand out the application to showcase each area we cover.
 
-## Orientation
+## 1 - Orientation
 1. What is Angular?
 2. Project Creation - Run through of how to install software needed and creating a new project.
 3. CLI introduction - Using Angular's command line interface (CLI).
@@ -16,7 +16,7 @@
 - Replace the angular logo in the AppComponent's HTML template with this image.
 - (+1) Adjust the size of the new image and change the background color if you desire.
 
-## Components (Part 1)
+## 2 - Component internals
 1. High level breakdown - The TypeScript class, it's HTML template, it's SCSS styling file, and the unit testing spec file.
 2. Data binding - Cover how the HTML template the in the component dynamically updates via bindings the component's support class.
 https://angular.io/guide/architecture-components#data-binding
@@ -37,7 +37,7 @@ avengers: any[] = [
 - In AppComponent's HTML template, replace the unordered list (`<ul>...</ul>`) with an unordered listing of Avengers.  Use a Repeater with the array of Avengers from the previous step to achieve this.
 - (+1) Create a class named Avenger with the properties of "name", "realName", and "primaryColor".  Update the array created earlier to be an array of the Avenger class rather than an array of raw JavaScript objects.
 
-## Components (Part 2)
+## 3 - Component interactions
 1. Component hierarchy - index.html/main.ts->app.module.ts->app.component->...
 2. Cover how to embed components in the HTML template of a parent component.
 - Input parameters - Cover how a component can accept inputs from the parent.
