@@ -50,9 +50,18 @@ avengers: Avenger[] = [
 https://angular.io/guide/user-input#user-input
 - Property bindings - We've covered Input and Event bindings so far.  The third is property bindings and this is where the changes from these other two events can radiate to the page the changes they try to affect.  The bottom line is you can use the data made public in your typescript and the event bindings in your HTML templates to really affect change in what is seen on screen when you tie them into property bindings.
 https://toddmotto.com/ng-class-angular-classes
-### Exercise
+### Exercise, part 1
 - Update the avenger listing `li` list item in your AppComponent with a click binding.  When the click event fires, set in the AppComponent TypeScript class, a "selectedAvenger" class variable to the avenger that the user clicked on.
 - Update the same list item so that if the avenger it is handling is the same as the selectedAvenger from the previous step, the display this avenger differently than the rest.
+
+### Exercise, part 2
+- Add a description property to the Avenger TypeScript class from the 1st exercise.
+- In the avengers array, add a description to each avenger created there.
+- Add a section to the right-hand side of the Avenger listing that shows the desription for the selected avenger.
+
+
+
+
 
 
 ## 4 - Component (outputs/emitters)
