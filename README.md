@@ -50,14 +50,13 @@ avengers: Avenger[] = [
 https://angular.io/guide/user-input#user-input
 - Property bindings - We've covered Input and Event bindings so far.  The third is property bindings and this is where the changes from these other two events can radiate to the page the changes they try to affect.  The bottom line is you can use the data made public in your typescript and the event bindings in your HTML templates to really affect change in what is seen on screen when you tie them into property bindings.
 https://toddmotto.com/ng-class-angular-classes
-### Exercise, part 1
+### Exercise, part 1:
 - Update the avenger listing `li` list item in your AppComponent with a click binding.  When the click event fires, set in the AppComponent TypeScript class, a "selectedAvenger" class variable to the avenger that the user clicked on.
 - Update the same list item so that if the avenger it is handling is the same as the selectedAvenger from the previous step, the display this avenger differently than the rest.
-
-### Exercise, part 2
+### Exercise, part 2:
 - Add a description property to the Avenger TypeScript class from the 1st exercise.
 - In the avengers array, add a description to each avenger created there.
-- Add a section to the right-hand side of the Avenger listing that shows the desription for the selected avenger.
+- Add a section to the right-hand side of the Avenger listing that shows the description for the selected avenger.
 
 
 
@@ -68,21 +67,8 @@ https://toddmotto.com/ng-class-angular-classes
 - Event parameters - Cover how as a practice any data changes you need to emit from a component should be through event parameters.
 https://angular.io/guide/component-interaction#parent-listens-for-child-event
 
-
-
-
-
-
-
-
-4. Common Angular additions to add into your HTML templates.
-
+- Common Angular additions to add into your HTML templates.
 - Conditionals (to show or hide an HTML element and its children): https://angular.io/api/common/NgIf
 
-
+## Services
 ## Routing
-
-### Exercise:
-When clicking on any of the avengers in the listing (clicking on a given avengers component), show an image of the given avenger on an area of the page.  The URL at the top of the browser should state: 
-http://localhost:4200/avenger/<The Avenger's name here>
-Test: when you reload the screen, the avenger selected should still have their image displayed.
