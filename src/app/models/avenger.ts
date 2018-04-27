@@ -1,14 +1,12 @@
 export class Avenger {
   name: string;
   realName: string;
-  primaryColor: string;
   icon: string;
-  videoUrl: string;
-  constructor(name: string, realName: string, primaryColor: string, icon: string, videoUrl: string) {
+  primaryColor: string;
+  constructor(name: string, realName: string, icon: string, primaryColor: string) {
     this.name = name;
     this.realName = realName;
-    this.primaryColor = primaryColor;
     this.icon = icon;
-    this.videoUrl = videoUrl;
+    this.primaryColor = primaryColor;
   }
 }
