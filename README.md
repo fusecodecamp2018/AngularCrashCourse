@@ -49,42 +49,39 @@ avengers: Avenger[] = [
 - Pass the given Avenger as an input parameter to the component.
 - Update the HTML template for the avenger component so that is displays the name and realName for the given Avenger.
 
-## 4 - Bindings
-- We have bindings in place now which sends the avengers array down into a repeated Avenger component.  Tons of events can happen in web applications which would trigger these bindings to change.  Here we're going to cover scenariwhen someone clicks on one of these avengers.
+## 4 - Event and Property Bindings
+- We have bindings in place now which sends the avengers array down into a repeated Avenger component.  Tons of events can happen in web applications which would trigger these bindings to change.  Here we're going to cover scenario when someone clicks on one of these avengers.
 - Event binding (click) - Cover how you can bind events in your HTML template to interact with logic in the component's TypeScript file.
 https://angular.io/guide/user-input#user-input
 - Property bindings - We've covered Input and Event bindings so far.  The third is property bindings and this is where the changes from these other two events can radiate to the page the changes they try to affect.  The bottom line is you can use the data made public in your typescript and the event bindings in your HTML templates to really affect change in what is seen on screen when you tie them into property bindings.
 https://toddmotto.com/ng-class-angular-classes
-### Exercise, part 1:
+### Exercise
 - Update the avenger listing `li` list item in your AppComponent with a click binding.  When the click event fires, set in the AppComponent TypeScript class, a "selectedAvenger" class variable to the avenger that the user clicked on.
-- Update the same list item so that if the avenger it is handling is the same as the selectedAvenger from the previous step, the display this avenger differently than the rest.
-### Exercise, part 2:
+- Update the same list item so that if the avenger it is handling is the same as the selectedAvenger from the previous step, then display this avenger differently than the rest.
+
+## 5 - Interactions between components
+Now that an Avenger is highlighted when it is clicked on.  Let's introduce a right-hand pane next to the listing of Avengers that displays some additional information on this selected Avenger.
+- Conditionals (to show or hide an HTML element and its children): https://angular.io/api/common/NgIf
+### Exercise:
 - Add a description property to the Avenger TypeScript class from the 1st exercise.
 - In the avengers array, add a description to each avenger created there.
-- Add a section to the right-hand side of the Avenger listing that shows the description for the selected avenger.
+- Add a section to the right-hand side of the Avenger listing that shows the description for the selected avenger.  CSS styling adjustments will be needed to achieve this, feel free to reach out to an instructor and we will help guide you through this.
+- Create a new component named "selected-avenger" using the CLI.  This will create a SelectedAvenger component in your IDE.  The component will accept an Avenger as an input and it will display in its HTML the description for that given avenger.
+- Embed the SelectedAvenger component into the right-hand pane you created earlier.  Provide the selectedAvenger for its input.
+- Add to this right-hand pane an ngIf so that it is only rendered when there is an Avenger selected.
 
-## 5 - Component (outputs/emitters)
-- Event parameters - Cover how as a practice any data changes you need to emit from a component should be through event parameters.
-https://angular.io/guide/component-interaction#parent-listens-for-child-event
+## 5 - Interactions between components (continued)
+Let's expand on the right-hand pane information by adding something the user can interact with to change some property on the selected Avenger.
 ### Exercise:
 - Add to your list of avengers some of the villians from the story.
-- Add a radio button toggle in the right-hand pane where the selected Avenger is presented.  The radio button can be toggled on by the user to indicate that the selected Avenger is a villan (ex. Loki).
-- Style the listing of avengers so that villians are presented differently.  Maybe change the font color to red or some other particular you think makes sense.
+- Add a checkbox on the right-hand pane where the selected Avenger is presented.  The checkbox will indicate that the selected Avenger is a hero or a villain.
+- Style the listing of avengers so that villians are presented differently.  Maybe change the font color to red or some other particular that you think makes sense.
+
+... Next
+Talk about the dangers of two-way binding.  Modify the last change on the checkbox so that it sends the event up to the parent component which is the owner of the selectedAvenger
+- Event parameters - Cover how as a practice any data changes you need to emit from a component should be through event parameters.
+https://angular.io/guide/component-interaction#parent-listens-for-child-event
 
 ## Services
-- Cover the basics of services for Angular via the link below.
-https://angular.io/tutorial/toh-pt4
-- Call out how the service has to be 
-
-### Exercise:
-- Use the CLI to create a service named "avenger".
-- Inject the
-
 
 ## Routing
-
-
-
-
-
-- Conditionals (to show or hide an HTML element and its children): https://angular.io/api/common/NgIf

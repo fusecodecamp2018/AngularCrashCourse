@@ -9,5 +9,9 @@
 }
 
 .avenger-name {
+  padding-left: 5rem;
   line-height: 3rem;
+  &.is-villian {
+    color: red;
+  }
 }

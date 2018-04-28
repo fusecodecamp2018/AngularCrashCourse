@@ -1,0 +1,7 @@
+<h3>Avenger description</h3>
+<p>{{selectedAvenger.description}}</p>
+
+<h3>Avenger details you can change</h3>
+<input type="checkbox" id="villianCheckBox" [checked]="selectedAvenger.isVillian" (change)="selectedAvenger.isVillian = !selectedAvenger.isVillian"
+/>
+<label for="villianCheckBox">Is this avenger a villian?</label>

@@ -9,7 +9,7 @@
       </li>
     </ul>
   </div>
-  <div class="selected-avenger-content">
-    <p>{{selectedAvenger.description}}</p>
+  <div class="selected-avenger-content" *ngIf="selectedAvenger">
+    <app-selected-avenger [selectedAvenger]="selectedAvenger"></app-selected-avenger>
   </div>
 </div>

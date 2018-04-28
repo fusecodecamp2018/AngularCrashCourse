@@ -1,6 +1,6 @@
-<div class="avenger-icon">
+<div class="avenger-icon" *ngIf="avenger.icon">
   <img [src]="avenger.icon" alt="avenger image">
 </div>
-<div class="avenger-name" [style.color]="avenger.primaryColor">
+<div class="avenger-name" [class.is-villian]="avenger.isVillian">
   <strong>{{avenger.name}}</strong> - {{avenger.realName}}
 </div>
